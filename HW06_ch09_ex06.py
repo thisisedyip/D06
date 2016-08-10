@@ -8,16 +8,32 @@
 # (2)
 # How many abecedarian words are there?
 #   - write additional function(s) to assist you
-#   - number of abecedarian words:
+#   - number of abecedarian words: 596
 ##############################################################################
 # Imports
 
 # Body
+def is_abecedarian(word):
+    word_list = list(word)
+    word_sort = sorted(word_list)
+    if word_list == word_sort:
+        return True
 
+def abecedarian_count():
+    with open("words.txt", "r") as f:
+        lines = f.readlines()
+        
+    count = 0
+    
+    for word in lines:
+        if is_abecedarian(word.strip()):
+            count += 1
+    print(count)
 
 ##############################################################################
 def main():
     pass  # Call your function(s) here.
+    abecedarian_count()
 
 if __name__ == '__main__':
     main()
