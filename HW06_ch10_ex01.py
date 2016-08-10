@@ -5,3 +5,16 @@
 # In your final submission: 
 #  - Do not print anything extraneous!
 #  - Do not put anything but pass in main()
+
+import itertools
+
+def nested_sum(t):
+    oneDarray = list(itertools.chain(*t))
+    print(sum(oneDarray))
+ 
+################################################################################
+def main():
+    pass
+
+if __name__ == '__main__':
+    main()

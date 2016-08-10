@@ -1,0 +1,3 @@
+The number of names containing the letter "e" is 9
+
+Edward, Ankeet, Sandeep, Yifei, Peter, Sophie, Meghana, Shazeda, Michelle
