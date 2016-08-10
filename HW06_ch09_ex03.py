@@ -75,7 +75,7 @@ def find_five():
         counts_list.append([counts[letter], letter])
     counts_list.sort()
     print("The 5 forbidden letters that will yield the least amount of words are: ", end='') 
-    for a, b in counts_list[-5:]:
+    for a, b in counts_list[:5]:
         print(b, end='')
     print()
         
